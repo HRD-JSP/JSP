@@ -13,6 +13,7 @@ public class Connect {
 	private static Connection con;
 	public static Connection getConnection() throws SQLException{
 		con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/ajaxdb","root","");
+		System.out.println("olo");
 		return con;
 	}
 }
